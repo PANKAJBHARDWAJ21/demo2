@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head> 
+<body>
+    <h1 style="color: rgb(234, 10, 10);"> <u>  Array  </u> </h1>
+    <p> The Array object, as with arrays in other programming languages,<br>
+         enables storing a collection of multiple items under a single variable name,<br>
+          and has members for performing common array operations.</p>
+    <h2 style="color: rgb(234, 10, 10);" >
+       <u>Array indices </u> 
+    </h2>
+    <p> Array objects cannot use arbitrary strings as element indexes (as in an associative array) <br>
+        but must use nonnegative integers (or their respective string form). <br>
+        Setting or accessing via non-integers will not set or retrieve an element from the array list itself,<br>
+         but will set or access a variable associated with that array's object property collection. <br>
+         The array's object properties and list of array elements are separate, and the array's traversal and mutation operations cannot be applied to these named properties.</p>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#description"> picture <br> </a>
+    <a href="tel:+8433064230"> phone </a>
+    <h3 style="color: rgb(211, 9, 9);"> <u> Types of List </u> </h3>
+    <ol> 
+        <li>unordered list</li>
+        <li>ordered list</li>
+        <li>discription list</li>
+       
+    </ol>
+    <table border="4">
+       <tr id="t" style="color: rgb(255, 0, 0);">
+            <td>name</td>
+            <td>age</td>
+            <td>course</td>
+        </tr> 
+        <tr>
+            <td>pankaj</td>
+            <td>23</td>
+            <td>b.tech</td>
+        </tr>
+        <tr>
+            <td>lavi</td>
+            <td>22</td>
+            <td>ITI</td>
+        </tr>
+        <tr>
+            <td>nitesh</td>
+            <td>  law</td>
+            <td>24</td>
+        </tr>
+    </table>
+    <img src="PANKAJ.jpg" alt="pankaj" height="100px" width="80px">
+    <p>The Array object, as with arrays in other programming<br> languages, enables storing a collection of multiple items under a single variable name, and has members for performing common array operations.
+
+        Description
+        In JavaScript, arrays aren't primitives but are instead<br>
+         Array objects with the following core characteristics:
+        
+        JavaScript arrays are resizable and can contain a mix<br>
+         of different data types. (When those characteristics are undesirable, use typed arrays instead.)
+        JavaScript arrays are not associative arrays and so, array elements<br>
+         cannot be accessed using arbitrary strings as indexes, but must be accessed using nonnegative integers (or their respective string form) as indexes.
+        JavaScript arrays are zero-indexed: the first element of an array is at index 0, the second is at index 1, and so on — and the last element is at the value of the array's length property minus 1.
+        JavaScript array-copy operations create shallow copies. (All standard built-in copy operations with any JavaScript objects create shallow copies, rather than deep copies).
+        Array indices
+        Array objects cannot use arbitrary strings as element indexes (as <br>
+        in an associative array) but must use nonnegative integers (or their respective string form). Setting or accessing via non-integers will not set or retrieve an element from the array list itself, but will set or access a variable associated with that array's object property collection. The array's object properties and list of array elements are separate, and the array's traversal and mutation operations cannot be applied to these named properties.
+        
+        Array elements are object properties in the same way that toString <br>
+        is a property (to be specific, however, toString() is a method). Nevertheless,<br>
+         trying to access an element of an array as follows t<br>hrows a syntax error because the property name is not valid:
+        
+        JS
+        Copy to Clipboard
+        
+        console.log(arr.0); // a syntax error
+        JavaScript syntax requires properties beginning with a digit to be accessed using<br>
+         bracket notation instead of dot notation. It's also<br> possible to quote the array indices (e.g.,<br> years['2'] instead of years[2]), although usually not necessary.
+        
+        The 2 in years[2] is coerced into a string by <br>the JavaScript engine through an implicit toString <br>conversion. As a result, '2' and '02' would refer to two different slots on the years object, and the following example could be true:
+        
+        JS
+        Copy to Clipboard
+        
+        console.<br>log(years["2"] !== years["02"]);
+        Only years['2'] is an actual array index. years['02'] is an arbitrary<br>
+         string property that will<br> not be visited in array iteration.
+        
+        Relationship between le<br>ngth and numerical properties
+        A JavaScript array's length proper<br>ty and numerical properties are connected.
+        
+        Several of the built-in array method<br>s (e.g., join(), slice(), <br>
+        indexOf(), etc.) take into account the value of an array's length property when they're called.
+        <br>
+        Other methods (e.g., push(), splice(), etc.) also result in<br>
+         updates to an array's length property.
+        
+        JS
+        Copy to Clipboard
+        <br>
+
+        
+        const fruits = [];
+        fruits.push("banana", "apple", "peach");
+        console.log(fruits.length); // 3
+        When setting a property on <br>a JavaScript <br> array when the property <br>
+        is a valid array index and that index is outside<br> the current bounds of the array, the engin</p>
+        is a valid array index<br> and that index is outside the current bounds of the array, the engin</p>
+<a href="http://127.0.0.1:5500/practics.html#:~:text=Array,-The%20Array%20object"> array <br></a>
+<a href="PANKAJ.jpg">second</a>
+<P> 2 <sup> 5 </sup> H<sub>2</sub>O   2 <SUB>3</SUB></P>
+<pre> i 
+    l 
+    u 
+    io 
+                         g
+</pre>
+<header>king is king </header>
+<nav>pankaj is king</nav>
+<footer>life is not easy</footer>
+<div style="background-color: rgb(156, 214, 79);" >pankaj is a strong man </div>
+<span style="background-color: bisque;">pankaj is a honset person</span>
+<div style="background-color: blueviolet; display: inline;"  >use of diplay attribute</div>
+<span style="background-color: rgb(121, 81, 159); display: block;"> use of span in display</span>
+<table border="1" width="100%">
+    <th>home</th>
+    <th>facebook</th>
+    <th>gmail</th>
+    <th>login</th>
+</table>
+<a href="#t">hello <br></a>
+   <a href="http://127.0.0.1:5500/practics.html#t:~:text=common%20array%20operations.-,Array%20indices,-Array%20objects%20cannot">love <br></a>
+
+
+</body>
+</html>
